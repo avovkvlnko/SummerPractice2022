@@ -17,6 +17,7 @@ PUBLIC long int ArmstrongNumbersCheck(long int min, long int max)
 
 {
     long int value, number;
+    // змінна для перевірки суми
     long int sum_of_armstrong = 0;
 
     for (long int Armstong_Number = min; Armstong_Number <= max; Armstong_Number++)
