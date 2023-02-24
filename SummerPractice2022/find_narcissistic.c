@@ -1,10 +1,10 @@
 /**
 * @file find_narcissistic.c
-* @author Коваленко В.А, гр. 515-В
-* @date 20 серпня     2022
-* @brief Навчальна практика.
+* @author РљРѕРІР°Р»РµРЅРєРѕ Р’.Рђ, РіСЂ. 515-Р’
+* @date 20 СЃРµСЂРїРЅСЏ     2022
+* @brief РќР°РІС‡Р°Р»СЊРЅР° РїСЂР°РєС‚РёРєР°.
 *
-* 34 Варіант - Числа Армстронга
+* 34 Р’Р°СЂС–Р°РЅС‚ - Р§РёСЃР»Р° РђСЂРјСЃС‚СЂРѕРЅРіР°
 */
 
 #include <stdio.h>
@@ -21,14 +21,14 @@ PUBLIC long int ArmstrongNumbersCheck(long int min, long int max)
 
     for (long int Armstong_Number = min; Armstong_Number <= max; Armstong_Number++)
     {
-        // Значення суми і ступеня залежно від числа
+        // Р—РЅР°С‡РµРЅРЅСЏ СЃСѓРјРё С– СЃС‚СѓРїРµРЅСЏ Р·Р°Р»РµР¶РЅРѕ РІС–Рґ С‡РёСЃР»Р°
         int index = 0;
         long int sum = 0;
 
 
         value = Armstong_Number;
 
-        // Цикл по підвіщенню ступеня (1 - 1, 10 - 2, 100 - 3...)
+        // Р¦РёРєР» РїРѕ РїС–РґРІС–С‰РµРЅРЅСЋ СЃС‚СѓРїРµРЅСЏ (1 - 1, 10 - 2, 100 - 3...)
         while (value != 0)
         {
             value /= 10;
@@ -36,7 +36,7 @@ PUBLIC long int ArmstrongNumbersCheck(long int min, long int max)
         }
         value = Armstong_Number;
 
-        // Перевірка на збіг суми перемноженних членів з самим числом
+        // РџРµСЂРµРІС–СЂРєР° РЅР° Р·Р±С–Рі СЃСѓРјРё РїРµСЂРµРјРЅРѕР¶РµРЅРЅРёС… С‡Р»РµРЅС–РІ Р· СЃР°РјРёРј С‡РёСЃР»РѕРј
         while (value > 0)
         {
             number = value % 10;
